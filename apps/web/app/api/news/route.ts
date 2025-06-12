@@ -8,7 +8,6 @@ export async function GET(request: NextRequest) {
   const search = searchParams.get('search') || '';
 
   try {
-    // Connect to the NestJS API with the correct endpoint
     const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/news`, {
       params: { page, limit, search }
     });

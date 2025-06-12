@@ -9,8 +9,7 @@ import { useInfiniteNews } from '../hooks/useInfiniteNews';
 import { RefreshCw, Newspaper, TrendingUp } from 'lucide-react';
 
 const HomePage: React.FC = () => {
-  // Replace with your actual API endpoint
-  const API_URL = '/api/news'; // You'll need to create this API route
+  const API_URL = '/api/news';
 
   const {
     news,
@@ -118,7 +117,6 @@ const HomePage: React.FC = () => {
                 e.preventDefault();
                 const formData = new FormData(e.currentTarget);
                 const searchQuery = formData.get('searchQuery') as string;
-                // Update the API_URL with search parameter and refresh
                 refresh(searchQuery);
               }}
             >

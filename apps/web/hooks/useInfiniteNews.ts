@@ -26,10 +26,8 @@ export const useInfiniteNews = (apiUrl: string) => {
         setSearchQuery(search);
       }
 
-      // Use the provided search parameter or the current searchQuery state
       const currentSearch = search !== undefined ? search : searchQuery;
 
-      // Build the URL with search parameter if it exists
       let url = `${apiUrl}?page=${page}&limit=10`;
       if (currentSearch) {
         url += `&search=${encodeURIComponent(currentSearch)}`;
