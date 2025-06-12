@@ -55,7 +55,7 @@ This project uses a monorepo structure with Turborepo to manage both the backend
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/aditya-wiguna/news-aggregator-turborepo.git
 cd news-aggregator-turborepo
 ```
 
